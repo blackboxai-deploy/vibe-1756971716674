@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 47 65% 94%; /* Light Beige */
+    --foreground: 24 33% 28%; /* Chocolate Brown for text */
+    --card: 47 60% 90%; /* A slightly off-beige for cards */
+    --card-foreground: 24 33% 28%;
+    --popover: 47 65% 94%;
+    --popover-foreground: 24 33% 28%;
+    --primary: 45 74% 51%; /* Gold */
+    --primary-foreground: 24 33% 28%;
+    --secondary: 47 40% 85%;
+    --secondary-foreground: 24 33% 28%;
+    --muted: 47 30% 88%;
+    --muted-foreground: 24 33% 40%;
+    --accent: 24 33% 33%; /* Chocolate Brown for accents */
+    --accent-foreground: 47 65% 96%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 45 30% 80%;
+    --input: 45 30% 85%;
+    --ring: 45 74% 51%;
+    --radius: 0.5rem;
+    --chart-1: hsl(45 74% 51%);
+    --chart-2: hsl(45 74% 61%);
+    --chart-3: hsl(45 74% 71%);
+    --chart-4: hsl(45 74% 81%);
+    --chart-5: hsl(45 74% 91%);
+  }
+ 
+  .dark {
+    --background: 240 10% 3.9%; /* Near Black */
+    --foreground: 0 0% 98%; /* White */
+    --card: 240 10% 10%; /* Dark Gray */
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 210 40% 98%; /* Icy Blue */
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 240 10% 10%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 10% 15%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 210 40% 98%; /* Icy Blue for accents */
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 10% 15%;
+    --input: 240 10% 15%;
+    --ring: 210 40% 98%;
+    --chart-1: hsl(210 100% 70%);
+    --chart-2: hsl(210 100% 60%);
+    --chart-3: hsl(210 100% 50%);
+    --chart-4: hsl(210 100% 40%);
+    --chart-5: hsl(210 100% 30%);
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    padding-top: env(safe-area-inset-top);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+  }
+}
