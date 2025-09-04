@@ -39,8 +39,8 @@ next-env.d.ts
 
 .genkit/*
 .env*.local
-.env.production
 
 # firebase
 firebase-debug.log
 firestore-debug.log
+config.bat
